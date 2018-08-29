@@ -18,7 +18,7 @@ namespace MVC_WebApp_Customer_Module.Models
         [Required]
         public string Surname { get; set; }
         
-        [Phone]         // Check if it works orrectly
+        [Display(Name = "Mobile phone number")]
         [Required]
         public int Telephone_Number { get; set; }
 

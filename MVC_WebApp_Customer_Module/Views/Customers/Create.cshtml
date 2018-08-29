@@ -1,0 +1,43 @@
+﻿@model MVC_WebApp_Customer_Module.Models.Customer
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>Customer</h4>
+<div>
+    <div>
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly"></div>
+            <div>
+                <label asp-for="Name"></label>
+                <input asp-for="Name"/>
+                <span asp-validation-for="Name"></span>
+            </div>
+            <div>
+                <label asp-for="Surname"></label>
+                <input asp-for="Surname"/>
+                <span asp-validation-for="Surname"></span>
+            </div>
+            <div>
+                <label asp-for="Telephone_Number"></label>
+                <input asp-for="Telephone_Number"/>
+                <span asp-validation-for="Telephone_Number"></span>
+            </div>
+            <div>
+                <label asp-for="Address"></label>
+                <input asp-for="Address"/>
+                <span asp-validation-for="Address"></span>
+            </div>
+            <div>
+                <input type="submit" value="Create"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

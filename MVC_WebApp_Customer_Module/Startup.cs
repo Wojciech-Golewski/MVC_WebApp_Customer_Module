@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using MVC_WebApp_Customer_Module.Models;
 
 namespace MVC_WebApp_Customer_Module
 {
@@ -24,6 +26,9 @@ namespace MVC_WebApp_Customer_Module
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddDbContext<MVC_WebApp_Customer_ModuleContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("MVC_WebApp_Customer_ModuleContext")));
         }
         
 
@@ -33,7 +38,7 @@ namespace MVC_WebApp_Customer_Module
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Customers}/{action=Index}/{id?}");
             });
         }
     }
