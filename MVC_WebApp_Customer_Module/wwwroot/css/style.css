@@ -1,0 +1,43 @@
+﻿body {
+    background-color: #ededed;
+}
+table {
+    text-align: center;
+}
+.customer-main-container {
+    margin: 4em 1.5em;
+    position: relative;
+    padding: 1em;
+}
+.customer-remove-container {
+    background-color: #f8f8f8;
+    border: 1px solid #f8f8f8;
+    border-radius: 50px;
+}
+.customer-main-container > dl {
+    margin-left: 5em;
+}
+.customer-main-container > dl dd {
+    border-bottom: 1px solid #000;
+    background-color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+.customer-main-container > h4 {
+    text-align: center;
+}
+.action-buttons-right {
+    position: absolute;
+    z-index: 10;
+    right: 13%;
+    margin-top: -170px;
+}
+
+@media all and (max-width: 750px)
+{
+    .action-buttons-right {
+        position: static;
+        right: auto;
+        margin-top: auto;
+    }
+}

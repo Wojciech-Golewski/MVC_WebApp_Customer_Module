@@ -1,19 +1,30 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Customer Management Module</title>
 
+    <link rel="stylesheet" href="~/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+
 </head>
 <body>
-
     <div>
 
         @RenderBody()
 
-        <footer>
-            <p>&copy; 2018 - Customer Management Module by Wojciech Golewski using ASP.NET Core</p>
+        <footer class="card">
+            <p class="card-header">&copy; 2018 - Customer Management Module</p>
+            <div class="card-body">
+                <p class="card-text">Web application module created by Wojciech Golewski using ASP.NET Core.</p>
+                <div class="btn-group btn-group-toggle">
+                    <a href="http://wojciechgolewski.com" target="_blank" class="btn btn-secondary">Visit my website</a>
+                    <a href="https://github.com/Wojciech-Golewski" target="_blank" class="btn btn-secondary">Visit my GitHub profile</a>
+                    <a href="https://www.linkedin.com/in/wojciech-golewski-746431153/" target="_blank" class="btn btn-secondary">Visit my LinkedIn profile</a>
+                </div>
+            </div>
         </footer>
     </div>
 

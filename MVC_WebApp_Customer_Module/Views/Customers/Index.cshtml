@@ -3,14 +3,15 @@
 @{
     ViewData["Title"] = "Index";
 }
-
-<h2>Index</h2>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table>
-    <thead>
+<!--
+<h2 class="navbar navbar-expand-lg navbar-light bg-light"></h2>
+-->
+<nav class="navbar navbar-light bg-light">
+    <a asp-action="Create" class="btn btn-primary btn-lg">Create New</a>
+    <a asp-action="Index" class="navbar-brand">Customer Management Module</a>
+</nav>
+<table class="table table-hover">
+    <thead class="thead-dark">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Name)
@@ -27,7 +28,7 @@
             <th></th>
         </tr>
     </thead>
-    <tbody>
+    <tbody class="table">
 @foreach (var item in Model) {
         <tr>
             <td>
@@ -43,8 +44,8 @@
                 @Html.DisplayFor(modelItem => item.Address)
             </td>
             <td>
-                <a asp-action="Update" asp-route-id="@item.ID">Update</a>
-                <a asp-action="Remove" asp-route-id="@item.ID">Remove</a>
+                <a asp-action="Update" asp-route-id="@item.ID" class="btn btn-warning">Update</a>
+                <a asp-action="Remove" asp-route-id="@item.ID" class="btn btn-danger">Remove</a>
             </td>
         </tr>
 }

@@ -4,40 +4,50 @@
     ViewData["Title"] = "Create";
 }
 
-<h2>Create</h2>
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand">Create New Section</a>
+    <a asp-action="Index" class="btn btn-primary btn-lg">Customer Management Module</a>
+</nav>
 
-<h4>Customer</h4>
 <div>
     <div>
-        <form asp-action="Create">
+        <form asp-action="Create" class="customer-main-container">
             <div asp-validation-summary="ModelOnly"></div>
-            <div>
-                <label asp-for="Name"></label>
-                <input asp-for="Name"/>
-                <span asp-validation-for="Name"></span>
+            <div class="form-group row">
+                <label asp-for="Name" class="col-2 col-form-label text-right"></label>
+                <div class="col-5">
+                    <input asp-for="Name" type="text" class="form-control" />
+                    <span asp-validation-for="Name"></span>
+                </div>
             </div>
-            <div>
-                <label asp-for="Surname"></label>
-                <input asp-for="Surname"/>
-                <span asp-validation-for="Surname"></span>
+            <div class="form-group row">
+                <label asp-for="Surname" class="col-2 col-form-label text-right"></label>
+                <div class="col-5">
+                    <input asp-for="Surname" type="text" class="form-control" />
+                    <span asp-validation-for="Surname"></span>
+                </div>
             </div>
-            <div>
-                <label asp-for="Telephone_Number"></label>
-                <input asp-for="Telephone_Number"/>
-                <span asp-validation-for="Telephone_Number"></span>
+            <div class="form-group row">
+                <label asp-for="Telephone_Number" class="col-2 col-form-label text-right"></label>
+                <div class="col-5">
+                    <input asp-for="Telephone_Number" type="text" class="form-control" />
+                    <span asp-validation-for="Telephone_Number"></span>
+                </div>
             </div>
-            <div>
-                <label asp-for="Address"></label>
-                <input asp-for="Address"/>
-                <span asp-validation-for="Address"></span>
+            <div class="form-group row">
+                <label asp-for="Address" class="col-2 col-form-label text-right"></label>
+                <div class="col-5">
+                    <input asp-for="Address" type="text" class="form-control" />
+                    <span asp-validation-for="Address"></span>
+                </div>
             </div>
-            <div>
-                <input type="submit" value="Create"/>
+            <div class="action-buttons-right">
+                <div class="btn-group-vertical">
+                    <input type="submit" value="Create" class="btn btn-success btn-lg" />
+                    <a asp-action="Index" class="btn btn-outline-primary btn-lg">Back to Main Page</a>
+                </div>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
