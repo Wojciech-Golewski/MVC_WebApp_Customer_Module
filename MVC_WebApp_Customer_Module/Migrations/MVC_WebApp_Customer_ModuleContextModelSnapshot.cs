@@ -26,17 +26,18 @@ namespace MVC_WebApp_Customer_Module.Migrations
 
                     b.Property<string>("Address")
                         .IsRequired()
-                        .HasMaxLength(50);
+                        .HasMaxLength(100);
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(30);
+                        .HasMaxLength(50);
 
                     b.Property<string>("Surname")
                         .IsRequired()
-                        .HasMaxLength(30);
+                        .HasMaxLength(50);
 
-                    b.Property<int>("Telephone_Number");
+                    b.Property<string>("Telephone_Number")
+                        .IsRequired();
 
                     b.HasKey("ID");
 
