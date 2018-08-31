@@ -10,19 +10,19 @@ namespace MVC_WebApp_Customer_Module.Models
     {
         public int ID { get; set; }
 
-        [StringLength(30, MinimumLength = 1)]
+        [StringLength(50, MinimumLength = 1)]
         [Required]
         public string Name { get; set; }
 
-        [StringLength(30, MinimumLength = 1)]
+        [StringLength(50, MinimumLength = 1)]
         [Required]
         public string Surname { get; set; }
         
         [Display(Name = "Mobile number")]
         [Required]
-        public int Telephone_Number { get; set; }
+        public string Telephone_Number { get; set; }
 
-        [StringLength(50, MinimumLength = 5)]
+        [StringLength(100, MinimumLength = 5)]
         [Required]
         public string Address { get; set; }
     }
