@@ -9,40 +9,39 @@
     <a asp-action="Index" class="btn btn-primary btn-lg">Customer Management Module</a>
 </nav>
 
-<div class="customer-main-container customer-remove-container">
-    <h4 class="text-uppercase font-weight-bold">Customer Details</h4>
-    <dl>
+<div class="customer-main-container">
+    <dl class="col-7">
         <dt>
             @Html.DisplayNameFor(model => model.Name)
         </dt>
-        <dd class="col-5">
+        <dd>
             @Html.DisplayFor(model => model.Name)
         </dd>
         <dt>
             @Html.DisplayNameFor(model => model.Surname)
         </dt>
-        <dd class="col-5">
+        <dd>
             @Html.DisplayFor(model => model.Surname)
         </dd>
         <dt>
             @Html.DisplayNameFor(model => model.Telephone_Number)
         </dt>
-        <dd class="col-5">
+        <dd>
             @Html.DisplayFor(model => model.Telephone_Number)
         </dd>
         <dt>
             @Html.DisplayNameFor(model => model.Address)
         </dt>
-        <dd class="col-5">
+        <dd>
             @Html.DisplayFor(model => model.Address)
         </dd>
     </dl>
     
     <form asp-action="Remove">
-        <div class="action-buttons-right">
-            <div class="btn-group">
-                <input type="hidden" asp-for="ID" />
+        <div class="action-buttons-right col-2 remove-buttons">
+            <div class="btn-group-vertical">
                 <input type="submit" value="Remove" class="btn btn-danger btn-lg" />
+                <input type="hidden" asp-for="ID" />
                 <a asp-action="Index" class="btn btn-outline-primary btn-lg">Back to Main Page</a>
             </div>
         </div>

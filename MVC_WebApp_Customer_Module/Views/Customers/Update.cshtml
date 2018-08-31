@@ -10,12 +10,11 @@
 </nav>
 
 <div>
-    <div>
+    <div class="customer-main-container">
         <form asp-action="Update" class="customer-main-container">
             <div asp-validation-summary="ModelOnly"></div>
             <input type="hidden" asp-for="ID" />
 
-            <h4 class="text-uppercase font-weight-bold">Customer Details</h4>
             <div class="form-group row">
                 <label asp-for="Name" class="col-2 col-form-label text-right"></label>
                 <div class="col-5">
@@ -52,8 +51,4 @@
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>

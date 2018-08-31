@@ -8,8 +8,6 @@ table {
     margin: 4em 1.5em;
     position: relative;
     padding: 1em;
-}
-.customer-remove-container {
     background-color: #f8f8f8;
     border: 1px solid #f8f8f8;
     border-radius: 50px;
@@ -29,11 +27,14 @@ table {
 .action-buttons-right {
     position: absolute;
     z-index: 10;
-    right: 13%;
+    left: 70%;
     margin-top: -170px;
 }
+.remove-buttons {
+    margin-top: -230px;
+}
 
-@media all and (max-width: 750px)
+@media all and (max-width: 800px)
 {
     .action-buttons-right {
         position: static;
