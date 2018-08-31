@@ -13,7 +13,11 @@ CMD window will open up indicating which localhost to take into consideration (e
 
 Having the CMD opened, please type in the given "localhost:XXXX" into your web browser.
 
-Additional information: This web application is framework independent (self-contained).
+
+Additional information:
+This web application is framework independent (self-contained).
+SQ: Server is in Folder "CustomerDB" - need to set it as mentioned in appsettings.json
+
 
 __________________________________________________________
 
