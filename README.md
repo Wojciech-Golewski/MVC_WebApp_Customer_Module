@@ -1,4 +1,10 @@
 # MVC_WebApp_Customer_Module
-Customer Management Module (CMM) - a standalone, working module written from scratch using ASP.NET Core technology.
+Customer Management Module (CMM) - MVC pattern
 
-This repository is work in progress
+In order to launch the application please go to:
+
+
+
+Created using:
+Microsoft Visual Studio | ASP.NET Core
+Razor Pages | SQL | Bootstrap CSS Framework + standalone CSS file.
